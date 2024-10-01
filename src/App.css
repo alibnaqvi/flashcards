@@ -1,0 +1,163 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  display: block;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #faebd7;
+  color: #000;
+  background-image: url(src/assets/potted-plant-doodle-vector-background.jpg?w=2000);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+h2, h4, h5 {
+  display: block;
+  margin-inline: 0;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+h4 {
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+}
+
+#medium {
+  background-color: #e6e26fd9;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px #0000004d;
+  transform-style: preserve-3d;
+  font-weight: 700;
+  height: 250px;
+  cursor: pointer;
+  transition: .15s;
+  padding: 2em;
+}
+
+.card.flipped {
+  transform: rotateX(180deg);
+}
+
+.card:hover {
+  box-shadow: 0 0 5px 2px #00000080;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 5px;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateX(180deg);
+}
+
+.card.easy {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+.card.medium {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+.card.hard {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color .25s;
+  appearance: auto;
+  text-rendering: auto;
+  color: buttontext;
+  box-sizing: border-box;
+  margin: 0;
+  padding-block: 1px;
+  padding-inline: 6px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:hover {
+  border-color: #646cff;
+}
